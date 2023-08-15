@@ -78,5 +78,10 @@ function ThemeButtonClick(event){
 }
 
 document.getElementById("ThemeButtonBtn").onclick = ThemeButtonClick
+document.onreadystatechange = function() {
+    if (document.readyState == "complete") {
+        ChangeAll()
+    }
+}
 ChangeAll()
 console.log("Loaded main script :3")
