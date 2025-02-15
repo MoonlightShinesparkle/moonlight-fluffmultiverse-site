@@ -1,0 +1,14 @@
+body{
+	height: 100%;
+	margin: 0px;
+}
+iframe.Insertion {
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	border-width: 0px;
+	min-height: 100%;
+	width: 100%;
+	height: 100%;
+}

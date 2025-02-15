@@ -1,0 +1,233 @@
+header{
+	background-color: rgb(128, 76, 184);
+	margin:0;
+	border:0;
+	padding:10px;
+}
+body{
+	margin:0px;
+	background-image: url("/Images/Projects/Cat\'sRevenge/Background.png");
+	background-repeat: repeat-x;
+}
+.BodyInterior{
+	margin: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+}
+footer{
+	background-color: rgb(128, 76, 184);
+	color:white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+	margin:0;
+	border:0;
+	padding:10px;
+	padding-bottom:20px;
+	padding-top:20px;
+}
+.TitleIco{
+	display:block;
+	width:auto;
+	height:150px;
+	padding-right: 10px;
+}
+.HeaderInterior{
+	margin:10px;
+	display:flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	align-self: center;
+	text-align: center;
+	justify-content: center;
+}
+h1{
+	color:white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size: xx-large;
+}
+.HeaderInterior p{
+	color:white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size: larger;
+}
+nav{
+	background-color: rgb(177, 105, 250);
+	margin:5px;
+	padding:10px;
+	display: flex;
+	justify-content: center;
+	border-color:white;
+	border:5px;
+	border-radius: 10px;
+}
+nav a{
+	background-color: white;
+	color:rgb(208, 0, 255);
+	padding: 5px;
+	padding-left:8px;
+	padding-right:8px;
+	border: 10px;
+	border-color: white;
+	border-radius: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: double;
+	text-decoration-line: underline;
+	text-decoration-thickness: 2px;
+	font-size: medium;
+	margin-right: 2.5px;
+	margin-left: 2.5px;
+	transition: color 500ms cubic-bezier(0.77, 0, 0.175, 1), font-size 500ms cubic-bezier(0.77, 0, 0.175, 1);
+	width: 16%;
+	text-align: center;
+}
+nav a:hover{
+	color: lightskyblue;
+	font-size: larger;
+	cursor: pointer;
+}
+.Document{
+	display:grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+	min-height: 100svh;
+}
+.BodyInterior p {
+	background-color: white;
+	border-radius: 10px;
+	padding: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.Banner{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 90%;
+	max-width: 520px;
+}
+.Division{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.Division img{
+	float:left;
+	height: 250px;
+	margin-right: 10px;
+	background-color: rgb(177, 105, 250);
+	padding:5px;
+	border-radius: 10px;
+
+}
+.Division img.right{
+	float: right;
+	height: 250px;
+	margin-left: 10px;
+	padding: 5px;
+	border-radius: 10px;
+}
+.Division p{
+	font-size: 20px;
+	word-wrap: break-word;
+}
+.blockcontainer{
+	text-align: center;
+}
+.block{
+	display:inline-block;
+	padding-top:5px;
+}
+.Separator{
+	margin-top: 10px;
+}
+ul{
+	color: purple;
+	font-size: large;
+}
+h2{
+	font-size:x-large;
+	text-align: center;
+	background-color: rgb(177, 105, 250);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+	color: white;
+}
+.StepSmall{
+	display:block;
+	height:120px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	transition: height 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.StepSmall:hover{
+	height:150px;
+}
+.StepBig{
+	display:block;
+	height:250px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+a{
+	color:lightskyblue;
+	font-weight: bolder;
+}
+a.Download{
+	display:block;
+	text-align: center;
+	background-color: darkorchid;
+	padding:10px;
+	border-radius:10px;
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+a.Download:link{
+	color: white;
+}
+a.Download:visited{
+	color: darkorchid;
+}
+.ImgContainer{
+	display:flex;
+	flex-direction: row;
+	image-rendering: pixelated;
+}
+table {
+	border-radius: 10px;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+td, th {
+	border-color: rgba(153, 50, 204, 0.5);
+	border-width: 2px;
+	border-style: solid;
+	align-self: center;
+	align-content: center;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+th {
+	background-color: rgba(177, 105, 250,0.5);
+	font-size: larger;
+	color: white;
+}
+td {
+	background-color: rgba(255,255,255,0.5);
+}
+td img{
+	height: 100px;
+}

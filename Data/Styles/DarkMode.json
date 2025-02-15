@@ -1,0 +1,10 @@
+{
+	"--TextColor": "#ffffff",
+	"--BodyBG": "#0e0015",
+	"--OuterBG": "#a26bc5",
+	"--OtherColor":"#000000",
+	"--ActiveColor":"#acf7ff",
+	"--SelectionColor":"#c56bbf",
+	"--KeywordColor":"#c32c84",
+	"--LinkColor":"#3d54ac"
+}

@@ -1,0 +1,220 @@
+header{
+	background-color: chocolate;
+	margin:0;
+	border:0;
+	padding:10px;
+}
+body{
+	background-color: lightsalmon;
+	margin:0;
+	border:0;
+	padding:0;
+}
+footer{
+	background-color: chocolate;
+	color:white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+	margin:0;
+	border:0;
+	padding:10px;
+	padding-bottom:20px;
+	padding-top:20px;
+}
+.TitleIco{
+	display:block;
+	width:auto;
+	height:150px;
+	padding-right: 10px;
+}
+.HeaderInterior{
+	margin:10px;
+	display:flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	align-self: center;
+	text-align: center;
+	justify-content: center;
+}
+h1{
+	color:white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size: xx-large;
+}
+.HeaderInterior p{
+	color:white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size: larger;
+}
+nav{
+	background-color: coral;
+	margin:5px;
+	padding:10px;
+	display: flex;
+	justify-content: space-evenly;
+	border-color:white;
+	border:5px;
+	border-radius: 10px;
+}
+nav a{
+	background-color: white;
+	color:orange;
+	padding: 5px;
+	padding-left:8px;
+	padding-right:8px;
+	border: 10px;
+	border-color: white;
+	border-radius: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: double;
+	text-decoration-line: underline;
+	text-decoration-thickness: 2px;
+	font-size: medium;
+	transition: color 500ms cubic-bezier(0.77, 0, 0.175, 1), font-size 500ms cubic-bezier(0.77, 0, 0.175, 1);
+	width: 16%;
+	text-align: center;
+}
+nav a:hover{
+	color: darkorchid;
+	font-size: larger;
+	cursor: pointer;
+}
+
+.BodyInterior{
+	margin: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+}
+.BodyInterior h1{
+	color:chocolate;
+	text-align: center;
+}
+.Document{
+	display:grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+	min-height: 100svh;
+}
+h2 {
+	text-align: center;
+	margin: 0;
+	padding: 2px;
+	color:white;
+	background-color: chocolate;
+	border-color: white;
+	border-radius: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Division {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.Division img{
+	float:left;
+	height: 250px;
+	margin-right: 10px;
+	background-color: chocolate;
+	padding:5px;
+	border-radius: 10px;
+
+}
+.Division img.right{
+	float: right;
+	height: 250px;
+	margin-left: 10px;
+	padding: 5px;
+	border-radius: 10px;
+}
+.Division p{
+	font-size: 20px;
+	word-wrap: break-word;
+}
+hr{
+	color:chocolate;
+	background-color: chocolate;
+	height: 4px;
+	border: none;
+}
+.Unit{
+	background-color: white;
+	padding:10px;
+	margin-top: 10px;
+	margin-bottom:10px;
+	border-radius: 10px;
+	min-height: 110px;
+}
+.Unit a{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: larger;
+	transition: color 500ms cubic-bezier(0.165, 0.84, 0.44, 1), font-size 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Unit a:link{
+	color:chocolate;
+}
+.Unit a:visited{
+	color:palevioletred;
+}
+.Unit a:hover{
+	color: darkorchid;
+	cursor: pointer;
+	font-size: x-large;
+}
+.Unit div{
+	margin-top: 10px;
+	display:flex;
+	align-items: center;
+}
+.Unit img{
+	float:left;
+	height:100px;
+	margin-right:10px;
+	background-color: coral;
+	border-radius: 10px;
+	padding: 5px;
+}
+table {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+td, th {
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	align-self: center;
+	align-content: center;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+th {
+	background-color: rgb(242, 168, 116);
+	font-size: larger;
+}
+td {
+	background-color: white;
+}
+td img{
+	height: 100px;
+}
+ul{
+	color:rgb(255, 255, 255);
+	font-size: large;
+}
+.Separator{
+	margin-top: 10px;
+}
+textarea{
+	width: 100%;
+	height: 400px;
+	background-color: chocolate;
+	color: white;
+	font-weight: bold;
+}

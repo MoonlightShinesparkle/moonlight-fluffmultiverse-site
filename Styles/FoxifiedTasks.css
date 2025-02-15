@@ -1,0 +1,278 @@
+:root{
+	--TopBottom: chocolate;
+	--DarkText: chocolate;
+	--LightText: white;
+	--OrangeBg: coral;
+	--HoverDarkText: darkorchid;
+	--BodyBg: lightsalmon;
+	--RedBg: salmon;
+	--RedText: firebrick;
+	--GreenBg: palegreen;
+	--GreenText: darkgreen;
+}
+body{
+	margin: 0;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+	min-height: 100svh;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	background-color: var(--TopBottom);
+}
+
+header,footer{
+	background-color: var(--TopBottom);
+	padding-bottom: 10px;
+}
+header{
+	padding-left: 10px;
+	padding-right: 10px;
+	display:flex;
+	align-items: center;
+	vertical-align: center;
+	justify-content: space-between;
+}
+header *{
+	display:inline-block;
+	margin:0px;
+	padding:0px;
+}
+header img{
+	display: block;
+	height: 100px;
+}
+header a {
+	text-decoration: none;
+	color: var(--DarkText);
+}
+h1, footer {
+	font-weight: bold;
+	color: var(--LightText);
+}
+footer{
+	padding-top: 10px;
+	text-align: center;
+}
+#User {
+	background-color: var(--LightText);
+	padding: 10px;
+	margin-top: 5px;
+	display: block;
+	text-align: center;
+	justify-content: left;
+	border-radius: 10px;
+}
+#User img{
+	display: inline-block;
+	height: 40px;
+	border-radius: 100%;
+}
+#User p{
+	translate: 0px -50%;
+	display: inline-block;
+}
+
+#OIcon {
+	height: 100px;
+	display: none;
+}
+nav {
+	box-sizing: border-box;
+	height: auto;
+	width: 120px;
+	padding: 5px;
+	background-color: var(--OrangeBg);
+}
+nav ol {
+	width: 1fr;
+	margin: 0px;
+	padding: 0px;
+}
+nav :first-child{
+	margin-top: 5px;
+}
+nav li {
+	list-style: none;
+	width: 1fr;
+	background-color: var(--BodyBg);
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+	margin-bottom: 10px;
+	position: relative;
+}
+nav li::after{
+	content:"";
+	size: 0px;
+	height: 5px;
+	width: 0%;
+	display: block;
+	background-color: blueviolet;
+	position: absolute;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+nav li:hover::after{
+	width: 80%;
+}
+nav li:hover a{
+	font-size: larger;
+	color: var(--HoverDarkText);
+}
+nav a {
+	text-decoration: none;
+	color: var(--DarkText);
+	font-weight: bold;
+	font-size: large;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+main{
+	display:grid;
+	grid-template-columns: auto 1fr;
+}
+main > div{
+	padding: 10px;
+	background-color: var(--BodyBg);
+}
+h2,h3{
+	text-align: center;
+	color:var(--LightText);
+	background-color: var(--TopBottom);
+	border-radius: 10px;
+	padding: 5px;
+}
+h3{
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.FluffImg{
+	margin-left:auto;
+	margin-right: auto;
+	display: block;
+	height: 250px;
+}
+form input{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	align-self: center;
+	font-size: large;
+	color: var(--DarkText);
+}
+form button{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding:5px;
+	align-self: center;
+	font-size: large;
+	background-color: var(--TopBottom);
+	color: var(--LightText);
+	border-radius: 10px;
+	margin-top: 5px;
+	font-weight: bold;
+	transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+form button:hover{
+	color: var(--HoverDarkText);
+	background-color: var(--OrangeBg);
+}
+.btn, .redbtn{
+	background-color: var(--LightText);
+	color: var(--DarkText);
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: x-large;
+	text-align: center;
+	width: 1fr;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	border-width: 3px;
+	border-color: var(--DarkText);
+	border-style: outset;
+}
+.Success,.Error{
+	background-color: var(--GreenBg);
+	color: var(--GreenText);
+	display: block;
+	border-radius: 10px;
+	padding: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	align-self: center;
+	width: 1fr;
+	text-align: center;
+}
+.Error{
+	background-color: var(--RedBg);
+	color: var(--RedText);
+}
+.redbtn{
+	background-color: var(--RedBg);
+	color: var(--RedText);
+	border-color: var(--RedText);
+}
+.redbtn:hover, .btn:hover{
+	border-style: inset;
+}
+
+p{
+	text-align: center;
+}
+.Imglist{
+	padding-left: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	list-style: none;
+	width: fit-content;
+}
+.Imglist > li > div{
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	text-decoration: underline;
+}
+.Imglist > li > div > img{
+	display: inline-block;
+	height: 100px;
+	margin-right: 10px;
+}
+.Circle {
+	border-radius: 100%;
+}
+
+@media screen and (max-width: 300px){
+	body{
+		font-size: large;
+	}
+	#Icon{
+		display: block;
+	}
+	#OIcon{
+		display: none;
+	}
+	#User p{
+		display: inline-block;
+	}
+}
+@media screen and (max-width: 600px){
+	body{
+		font-size: medium;
+	}
+	#Icon{
+		display: none;
+	}
+	#OIcon{
+		display: block;
+	}
+	#User p{
+		translate: 0px -50%;
+		display: none;
+	}
+}
