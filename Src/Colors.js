@@ -8,7 +8,7 @@ if (!(localStorage.getItem("Mode") == null)){
 function ChangeAll(){
 	const ThemeBtn = document.getElementById("ThemeButton")
 	const ThemeImg = ThemeBtn.getElementsByTagName("img")[0]
-	ThemeImg.setAttribute("src","/Images/GUI/Switch/"+mode+".png")
+	ThemeImg.setAttribute("src","/images/GUI/Switch/"+mode+".png")
 	const RootStyle = document.getElementsByTagName("html")[0].style
 	try{
 		fetch("/Data/Styles/"+mode+".json").then(Doc => {
@@ -53,15 +53,15 @@ function Boopable(){
 				if ((Y > 0.35) & (Y < 0.6)){
 					Clicks += 1
 					if (Clicks == 1){
-						Icon.setAttribute("src","/Images/Fluffs/Moonlight/Moonblep.PNG")
+						Icon.setAttribute("src","/images/Fluffs/Moonlight/Moonblep.PNG")
 					}
 					setTimeout(() => {
 						Clicks -= 1
 						if (Clicks == 0){
-							Icon.setAttribute("src","/Images/Fluffs/Moonlight/Moonhead.PNG")
+							Icon.setAttribute("src","/images/Fluffs/Moonlight/Moonhead.PNG")
 						} else if (Clicks < 0){
 							Clicks = 0
-							Icon.setAttribute("src","/Images/Fluffs/Moonlight/Moonhead.PNG")
+							Icon.setAttribute("src","/images/Fluffs/Moonlight/Moonhead.PNG")
 						}
 					}, 2000)
 				}
