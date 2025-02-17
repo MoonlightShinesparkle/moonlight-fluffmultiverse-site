@@ -44,30 +44,31 @@ var Clicks = 0
 var InBox = false
 function Boopable(){
 	const Icon = document.getElementById("Icon")
-	if (Icon != null){
-		Icon.addEventListener("click",(Event) => {
-			var Rect = Event.target.getBoundingClientRect()
-			var X = (Event.clientX - Rect.left)/Rect.width
-			var Y = (Rect.bottom - Event.clientY)/Rect.height
-			if ((X > 0.4) & (X < 0.6)){
-				if ((Y > 0.35) & (Y < 0.6)){
-					Clicks += 1
-					if (Clicks == 1){
-						Icon.setAttribute("src","/images/Fluffs/Moonlight/Moonblep.PNG")
-					}
-					setTimeout(() => {
-						Clicks -= 1
-						if (Clicks == 0){
-							Icon.setAttribute("src","/images/Fluffs/Moonlight/Moonhead.PNG")
-						} else if (Clicks < 0){
-							Clicks = 0
-							Icon.setAttribute("src","/images/Fluffs/Moonlight/Moonhead.PNG")
-						}
-					}, 2000)
-				}
-			}
-		})
+	if (Icon == null){
+		return
 	}
+	Icon.addEventListener("click",(Event) => {
+		var Rect = Event.target.getBoundingClientRect()
+		var X = (Event.clientX - Rect.left)/Rect.width
+		var Y = (Rect.bottom - Event.clientY)/Rect.height
+		if ((X > 0.4) & (X < 0.6)){
+			if ((Y > 0.35) & (Y < 0.6)){
+				Clicks += 1
+				if (Clicks == 1){
+					Icon.setAttribute("src","/images/Fluffs/Moonlight/Moonblep.PNG")
+				}
+				setTimeout(() => {
+					Clicks -= 1
+					if (Clicks == 0){
+						Icon.setAttribute("src","/images/Fluffs/Moonlight/Moonhead.PNG")
+					} else if (Clicks < 0){
+						Clicks = 0
+						Icon.setAttribute("src","/images/Fluffs/Moonlight/Moonhead.PNG")
+					}
+				}, 2000)
+			}
+		}
+	})
 }
 
 Boopable()
