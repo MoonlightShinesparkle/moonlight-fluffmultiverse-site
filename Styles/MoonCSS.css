@@ -114,6 +114,17 @@ img.Centered{
 	margin-left: auto;
 	margin-right: auto;
 }
+.Asider{
+	display: grid;
+	grid-template-columns: 25% auto;
+}
+aside{
+	padding: 5px;
+	margin: 5px;
+	background-color: var(--OuterBG);
+	border-radius: 10px;
+	height: 100%;
+}
 @media screen and (max-width: 300px){
 	body{
 		font-size: large;

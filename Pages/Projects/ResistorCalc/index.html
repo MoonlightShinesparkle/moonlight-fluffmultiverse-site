@@ -44,7 +44,9 @@
     <div class="root">
         <div class="Asider">
             <aside>
-                
+                <div>
+                    Lorem ipsum dolor sit amet
+                </div>
             </aside>
             <main>
                 <h2>
@@ -65,21 +67,21 @@
                             <label>
                                 > Initial voltage: 
                             </label>
-                            <input id="VoltInit" type="number" placeholder="0"/>
+                            <input id="VoltInit" type="number" step="any" placeholder="0"/>
                             <span>V</span>
                         </div>
                         <div class="Input_field">
                             <label>
                                 > Consumed voltage: 
                             </label>
-                            <input id="VoltCons" type="number" placeholder="0"/>
+                            <input id="VoltCons" type="number" step="any" placeholder="0"/>
                             <span>V</span>
                         </div>
                         <div class="Input_field">
                             <label>
                                 > Amperage: 
                             </label>
-                            <input id="Amps" type="number" placeholder="0"/>
+                            <input id="Amps" type="number" step="any" placeholder="0"/>
                             <select id="AmpMagnitude">
                                 <option value="Mili">mA</option>
                                 <option value="Norm">A</option>
@@ -89,7 +91,7 @@
                             <label>
                                 > Tolerance: &PlusMinus;
                             </label>
-                            <input id="Tol" type="number" placeholder="5"/>
+                            <input id="Tol" type="number" step="any" placeholder="5"/>
                             <span>&percnt;</span>
                         </div>
                         <button id="Calc">
