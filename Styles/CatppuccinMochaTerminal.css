@@ -1,0 +1,73 @@
+#Terminal{
+	background-color: #1e1e2e;
+	outline-style: inset;
+	outline-color: #11111b;
+	border-radius: 20px;
+}
+
+#Terminal > :first-child{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	background-color: #11111b;
+	width: 100%;
+	text-align: center;
+	color: #cba6f7;
+	text-shadow: 
+		1px 1px 0px #835faf,
+		-1px 1px 0px #835faf,
+		1px -1px 0px #835faf,
+		-1px -1px 0px #835faf
+	;
+	font-size: larger;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0px;
+}
+
+#Terminal > :nth-child(2){
+	padding: 5px 25px 5px 25px;
+}
+
+#Terminal button{
+	padding: 5px 25px 5px 25px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f9e2af;
+	color: #968155;
+	font-weight: bold;
+	font-size: large;
+	border-radius: 10px;
+}
+
+#Terminal input{
+	color: #a6e3a1;
+	background-color: transparent;
+	border-width: 0px;
+	min-width: 4px;
+	width: min-content;
+}
+
+#Terminal input:focus {
+	color: #f5c2e7;
+}
+
+#Terminal input::placeholder{
+	color: #f38ba8;
+}
+
+.Input_field {
+	color: #a6e3a1;
+}
+
+.Output_field {
+	color: #74c7ec;
+}
+
+#Terminal select{
+	color: #a6e3a1;
+	background-color: #11111b;
+	border-radius: 10%;
+	font-weight: bold;
+	border-color: #1e1e2e;
+}

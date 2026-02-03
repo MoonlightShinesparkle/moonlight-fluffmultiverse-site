@@ -5,6 +5,7 @@
     <title>Moonlight resistor calc</title>
     <link rel="icon" type="image/png" href="/images/MoonlitIco.png"/>
     <link rel="stylesheet" href="/Styles/MoonCSS.css">
+    <link rel="stylesheet" href="/Styles/CatppuccinMochaTerminal.css">
     <script src="/Src/GenericInit.js" defer></script>
     <script src="/Src/Colors.js" defer></script>
 </head>
@@ -41,58 +42,102 @@
         </nav>
     </header>
     <div class="root">
-        <h2>
-            My webpage!
-        </h2>
-        <p>
-            Welcome to my webpage, here you may find different misc which are my
-            creations, due to the nature of them, they will be left in different sections.
-            The page was once a place solely for my drawings, but then I added one for some
-            WIP misc for a bot, one day I was given the school project of making a webpage from
-            scratch, this left me able to rework on my HTML skills and left me with a toolset capable
-            of leaving me able to create a better webpage, one that is more ordered and has a nice
-            structure for my needs.
-        </p>
-        <h2>
-            My projects
-        </h2>
-        <p>
-            You may be wondering what exactly are my projects, leave me show you them through a list:
-            <ul class="ButtonList">
-                <li>
-                    <a href="/">
-                        My webpage
-                    </a>
-                    The webpage you're seeing now
-                </li>
-                <li>
-                    <a href="/Pages/Projects/Foxware">
-                        Foxware incorporated
-                    </a>
-                    A webpage made as a school project
-                </li>
-                <li>
-                    <a href="/Pages/Projects/Games/Cat'sRevenge.html">
-                        Cat's revenge
-                    </a>
-                    A game i made through an old version of Godot and with a LUA plugin, these conditions
-                    make it my first working game and a glitchy one
-                </li>
-                <li>
-                    <a href="/Pages/Moonbelle/">
-                        Moonbelle
-                    </a>
-                    The kitten fox bot, might be down one than another time due to updates and due to updates on the 
-                    free server hosting service
-                </li>
-                <li>
-                    <a href="/Pages/Fluffs/">
-                        Fluffs
-                    </a>
-                    Just a set of fluffs i've drawn, including some AUs and concepts
-                </li>
-            </ul>
-        </p>
+        <div class="Asider">
+            <aside>
+                
+            </aside>
+            <main>
+                <h2>
+                    Resistance calculator
+                </h2>
+                <p>
+                    Allows the calculation of a resistance through ohm's law and
+                    afterpaw gets the closest matching resistor in your collection without
+                    sacrificing your component's integrity, that means it will get the closest
+                    higher or equal value to your resistors
+                </p>
+                <div id="Terminal">
+                    <p>
+                        Moonlight - JS - Rescalc &ohm;
+                    </p>
+                    <div>
+                        <div class="Input_field">
+                            <label>
+                                > Initial voltage: 
+                            </label>
+                            <input id="VoltInit" type="number" placeholder="0"/>
+                            <span>V</span>
+                        </div>
+                        <div class="Input_field">
+                            <label>
+                                > Consumed voltage: 
+                            </label>
+                            <input id="VoltCons" type="number" placeholder="0"/>
+                            <span>V</span>
+                        </div>
+                        <div class="Input_field">
+                            <label>
+                                > Amperage: 
+                            </label>
+                            <input id="Amps" type="number" placeholder="0"/>
+                            <select id="AmpMagnitude">
+                                <option value="Mili">mA</option>
+                                <option value="Norm">A</option>
+                            </select>
+                        </div>
+                        <div class="Input_field">
+                            <label>
+                                > Tolerance: &PlusMinus;
+                            </label>
+                            <input id="Tol" type="number" placeholder="5"/>
+                            <span>&percnt;</span>
+                        </div>
+                        <button id="Calc">
+                            Calculate
+                        </button>
+                        <div id="OutputWindow" hidden>
+                            <hr>
+                            <h2 class="Output_field" id="ResistChosen">
+                                No viable resistor found
+                            </h2>
+                            <div class="Output_field">
+                                <label>
+                                    > Calculated resistance:
+                                </label>
+                                <input type="number" id="ResistCalc" placeholder="0" disabled/>
+                                <span>&ohm;</span>
+                            </div>
+                            <div class="Output_field">
+                                <label>
+                                    > True minimum resistance:
+                                </label>
+                                <input type="number" id="ResistTrue" placeholder="0" disabled/>
+                                <span>&ohm;</span>
+                            </div>
+                            <div class="Output_field">
+                                <label>
+                                    > A resistor of:
+                                </label>
+                                <input type="text" id="WattAprox" placeholder="1/2" disabled/>
+                                <span>W can be used</span>
+                            </div>
+                            <div class="Output_field">
+                                <label>
+                                    > Watts:
+                                </label>
+                                <input type="number" id="WattTrue" placeholder="0" disabled/>
+                                <span>W</span>
+                            </div>
+                            <button id="HideRes">
+                                Hide
+                            </button>
+                        </div>
+                    </div>
+                    <script src="/Src/TerminalSetup.js"></script>
+                    <script src="/Src/ResistorCalc/ResistorCalculator.js"></script>
+                </div>
+            </main>
+        </div>
     </div>
     <insert src="/Pages/modules/GenericFooter.html"></insert>
 </body>
